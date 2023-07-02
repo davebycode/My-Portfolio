@@ -1,0 +1,464 @@
+:root {
+    --fontfamily: 'Yeseva One', cursive;
+    --fontsize1: 2rem;
+    --fontsize2: 4rem;
+    --fontsize3: 6rem;
+    --fontsize4: 7rem;
+    --color1: #F8F8F9;
+    --color2: #111439;
+}
+.about {
+background-image: linear-gradient(
+  40deg,
+  hsl(0deg 41% 58%) 1%,
+  hsl(1deg 49% 58%) 35%,
+  hsl(1deg 58% 58%) 44%,
+  hsl(1deg 66% 58%) 48%,
+  hsl(2deg 74% 58%) 50%,
+  hsl(2deg 81% 57%) 51%,
+  hsl(2deg 87% 56%) 51%,
+  hsl(2deg 93% 55%) 51%,
+  hsl(1deg 98% 52%) 50%,
+  hsl(7deg 100% 50%) 50%,
+  hsl(14deg 100% 50%) 49%,
+  hsl(19deg 100% 50%) 49%,
+  hsl(22deg 100% 50%) 49%,
+  hsl(26deg 100% 50%) 50%,
+  hsl(29deg 100% 50%) 52%,
+  hsl(32deg 100% 50%) 56%,
+  hsl(34deg 100% 50%) 65%,
+  hsl(37deg 100% 50%) 99%
+);
+    height: 100vh;
+    margin-top: 0;
+    padding-bottom: 4rem;
+}
+
+.navb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 0;
+}
+.navbLogo h1 {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontfamily);
+    font-size: var(--fontsize3);
+    padding-left: 2rem;
+    color: var(--color1);
+    font-weight: bolder;
+    border-color: var(--color2);
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+    border-radius: 5rem;
+    padding: 2rem;
+    margin-left: 2rem;
+    position: absolute;
+    
+}
+.fa-ellipsis-vertical {
+    color: var(--color1);
+    font-size: var(--fontsize3);
+    position: absolute;
+    top: 7rem;
+    left: 235rem;
+}
+.about-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 30%;
+}
+.about-text {
+    color: var(--color1);
+    font-size: var(--fontsize2);
+    text-align: center;
+    width: 50vw;
+    padding-left: 5rem;
+}
+.about-text h4, .about-text p {
+    text-align: left;
+}
+.avatar {
+    padding-left: 35rem;
+    padding-top: 35rem;
+}
+.avatar img {
+    width: 17vw;
+    border-radius: 50%;
+    border-color: var(--color1);
+    border-style: solid;
+    border-width: thin;
+    padding: 1rem;
+}
+.lang {
+    position: absolute;
+    top: 13rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    font-size: var(--fontsize1);
+    border-color: var(--color2);
+    border-style: solid;
+    border-width: thin;
+    padding: 2rem;
+    right: -11rem;
+    border-radius: 5%;
+    color: var(--color1);
+    transition-duration: 3s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+.lang:hover {
+    border-color: none;
+    background-color: var(--color2);
+    color: var(--color1);
+    
+}
+.icons {
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: var(--fontsize2);
+}
+.lang-second {
+    display: none;
+}
+@media (orientation:portrait) {
+    .about {
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+        height: 100vh;
+    }
+    .navbLogo h1, .about-text, .icons, .lang{
+        font-size: small;
+    }
+    .navbLogo h1 {
+        font-size: large;
+        padding: 1rem;
+        
+    } 
+    .fa-ellipsis-vertical {
+        font-size: 2rem;
+        position: absolute;
+        top: 1.7rem;
+        color: var(--color1);
+        left: 20rem;
+    }
+    .about-display {
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+        top: 15rem;
+    }
+    .avatar {
+        display: none;
+    }
+    .lang-second {
+        display: block;
+    }
+    .lang-second b {
+        transition-timing-function: ease-in-out;
+        transition-duration: 3s;
+        color: var(--color2);
+        font-weight: bolder;
+        text-transform: uppercase;
+        background-color: var(--color1);
+    }
+    .lang-second b:hover {
+        color: var(--color2);
+        background-color: var(--color1);
+    }
+    .about-text {
+        width: 90vw;
+        padding: 0 1rem;
+        padding-top: 1rem;
+
+    }
+    .lang {
+        font-size: small;
+        padding: 0;
+        top: -5rem;
+        gap: 1rem;
+        margin-left: -3%;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        bottom: -2rem;
+        font-size: large;
+        padding: 0.2rem;
+    }
+}
+@media (500px <= width <= 850px) {
+    .about {
+        overflow: hidden;
+    }
+    .lang-second {
+        display: none;
+    }
+    .avatar {
+        display: block;
+    }
+    .about-display {
+        position: absolute;
+        top: 38rem;
+    }
+    .avatar {
+        position: absolute;
+        top: -45rem;
+        right: 19rem;
+    }
+    .navb {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .fa-ellipsis-vertical {
+        position: absolute;
+        left: 45rem;
+        top: 2rem;
+    }
+    .about-text {
+        font-size: larger;
+    }
+    .lang {
+        position: absolute;
+        top: 25rem;
+        right: -6rem;
+        padding: 1rem;
+    }
+}
+@media (900px <= width <= 1300px) {
+    .about-text, .icons, .lang {
+        font-size: small;
+    }
+    .navbLogo h1 {
+        font-size: large;
+        padding: 1rem;
+    }
+    .fa-ellipsis-vertical {
+        position: absolute;
+        left: 60rem;
+        top: 2rem;
+        color: var(--color1);
+        font-size: var(--fontsize1);
+    }
+    .about-display {
+        display: flex;
+        flex-direction: row;
+        top: 15rem;
+    }
+    .avatar {
+        top: -32rem;
+        position: absolute;
+        right: -17rem;
+    }
+    .avatar img {
+        padding: 0.5rem;
+    }
+    .lang {
+        padding: 0.3rem;
+        top: 29rem;
+        gap: 1rem;
+        right: -2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
+    --fontfamily: 'Yeseva One', cursive;
+    --fontsize1: 2rem;
+    --fontsize2: 4rem;
+    --fontsize3: 6rem;
+    --fontsize4: 7rem;
+    --color1: #F8F8F9;
+    --color2: #111439;
+}
+.about {
+    background-color: orangered;
+    background-image: linear-gradient(315deg, orangered 0%, brown 74%);
+    height: 100vh;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+    overflow: hidden;
+}
+.about-text {
+    width: 50vw;
+}
+.navbLogo h1{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontfamily);
+    font-size: var(--fontsize3);
+    padding-left: 2rem;
+    font-weight: bolder;
+    border-color: var(--color2);
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+    border-radius: 5rem;
+    padding: 2rem;
+    margin-left: 2rem;
+    position: absolute;
+    color: var(--color1);
+}
+.about-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.about-text h1{
+    margin-top: 0;
+    padding-top: 40rem;
+    font-size: var(--fontsize3);
+    font-family: var(--fontfamily);
+    color: var(--color1);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.about-text h4, .about-text p {
+  font-size: var(--fontsize2);
+  text-align: left;
+  padding: 3rem;
+  color: var(--color1);
+}
+.about-text p {
+    font-weight: bold;
+}
+.avatar {
+    padding-top: 60rem;
+    padding-left: 15rem;
+    position: relative;
+}
+.avatar img {
+    width: 20vw;
+    border-radius: 50%;
+    border-color: var(--color1);
+    border-style: solid;
+    border-width: thin;
+    padding: 2rem;
+    position: absolute;
+}
+.lang {
+    display: flex;
+    flex-direction: row;
+    top: 40rem;
+    left: 10rem;
+    gap: 7rem;
+    position: absolute;
+}
+.lang h1 {
+    color: var(--color3);
+    font-size: var(--fontsize2);
+    border-color: var(--color1);
+    border-style: solid;
+    border-width: thin;
+    padding: 3rem;
+    border-radius: 50%;
+}
+.pen {
+    color: var(--color1);
+    font-size: 3rem;
+    font-size: var(--fontsize2);
+    right: 2rem;
+    margin-top: 5%;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    flex-direction: column;
+}
+@media (orientation: portrait) {
+    .about {
+        height: 100vh;
+        width: 100vw;
+    }
+    .navb {
+        position: relative;
+    }
+    .navbLogo h1 {
+        font-size: large;
+        padding: 0.5rem;
+        position: relative;
+    }
+    .fa-bars-staggered {
+        font-size: large;
+        position: absolute;
+        top: -10rem;
+        
+    }
+    .about-text {
+        
+        position: absolute;
+        
+        
+    }
+    .about-text h1, .about-text h4, .about-text p {
+        font-size: small;
+    }
+    .about-text h4, .about-text p {
+        width: 80vw;
+        margin-left: -20%;
+    }
+    .about-text p {
+        margin-top: -35%;
+    }
+    .pen {
+        font-size: large;
+    }
+    .about-display {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .avatar {
+        position: absolute;
+        top: -50rem;
+        left: -5rem;
+    }
+    .avatar img {
+        position: absolute;
+        padding: 1rem;
+        width: 20rem;
+    }
+} */

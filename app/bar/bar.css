@@ -1,0 +1,93 @@
+:root {
+    --fontfamily: 'Yeseva One', cursive;
+    --fontsize1: 2rem;
+    --fontsize2: 4rem;
+    --fontsize3: 6rem;
+    --fontsize4: 7rem;
+    --color1: #F8F8F9;
+    --color2: #111439;
+}
+.bars {
+    position: absolute;
+    margin-right: 3rem;
+    background-color: var(--color2);
+    color: var(--color1);
+    width: auto;
+    height: auto;
+    left: 79vw;
+    top: 12vh;
+    font-size: 4rem;
+    padding: 0.5rem 9rem;
+    
+}
+.main-bars {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0.5rem;
+    gap: -2rem;
+    
+} 
+.main-bars h5, .media h3 {
+    color: var(--color1);
+    text-decoration: none;
+    font-weight: bold;
+}
+.media {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    text-decoration: none;
+}
+@media (orientation:portrait) {
+    .bars {
+        left: 12rem;
+        font-size: large;
+        padding: 0.5rem 0.5rem;
+        top: 4rem;
+        
+    }
+    .media {
+        gap: 1rem;
+    }
+}
+@media (200px <= width <= 300px) {
+    .bars {
+        left: 10rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }   
+}
+@media (500px <= width <= 550px) {
+    .bars {
+        left: 20rem;
+    }
+}
+@media (700px <= width <= 850px) {
+    .bars {
+        left: 35rem;
+    }
+}
+@media (1020px <= width <= 1200px) {
+    .bars {
+        top: 5rem;
+        /* margin-left: 8rem; */
+        left: 50rem;
+        font-size: large;
+        padding: 0.5rem;
+    }
+    .media {
+        gap: 1rem;
+    }
+}
+@media (1250px <= width <= 2000px) {
+    .bars {
+        top: 5rem;
+        /* margin-left: 8rem; */
+        left: 58rem;
+        font-size: large;
+        padding: 0.5rem; 
+    }
+    .media {
+        gap: 0.2rem;
+    }
+}

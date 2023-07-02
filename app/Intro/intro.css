@@ -1,0 +1,294 @@
+:root {
+    --fontfamily: 'Yeseva One', cursive;
+    --fontsize1: 1rem;
+    --fontsize2: 3rem;
+    --fontsize3: 4rem;
+    --fontsize4: 4rem;
+    --color1: #F8F8F9;
+    --color2: #111439;
+}
+.basic {
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(
+  140deg,
+  hsl(0deg 41% 58%) 1%,
+  hsl(0deg 46% 58%) 32%,
+  hsl(0deg 52% 58%) 40%,
+  hsl(0deg 58% 58%) 45%,
+  hsl(0deg 64% 59%) 48%,
+  hsl(0deg 69% 59%) 50%,
+  hsl(0deg 75% 58%) 51%,
+  hsl(0deg 80% 58%) 51%,
+  hsl(0deg 85% 57%) 51%,
+  hsl(0deg 91% 57%) 51%,
+  hsl(0deg 96% 55%) 50%,
+  hsl(0deg 100% 50%) 50%,
+  hsl(11deg 100% 50%) 50%,
+  hsl(16deg 100% 50%) 49%,
+  hsl(19deg 100% 50%) 49%,
+  hsl(22deg 100% 50%) 49%,
+  hsl(25deg 100% 50%) 49%,
+  hsl(27deg 100% 50%) 50%,
+  hsl(29deg 100% 50%) 52%,
+  hsl(32deg 100% 50%) 55%,
+  hsl(33deg 100% 50%) 60%,
+  hsl(35deg 100% 50%) 68%,
+  hsl(37deg 100% 50%) 99%
+);
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+}
+.navbarLogo h1 {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontfamily);
+    font-size: var(--fontsize3);
+    padding-left: 2rem;
+    color: var(--color1);
+    font-weight: bolder;
+    border-color: var(--color2);
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+    border-radius: 5rem;
+    padding: 2rem;
+    margin-left: 2rem;
+    position: fixed;
+    
+}
+.fa-bars {
+    margin-top: 12rem;
+    color: var(--color1);
+    font-size: var(--fontsize3);
+    position: fixed;
+    right: 3rem;
+    top: -6rem;
+}
+.developer {
+    text-align: left;
+    margin-left: 7rem;
+    font-size: var(--fontsize2);
+    color: var(--color1);
+    position: fixed;
+    top: 40vh;
+}
+.developer h1 {
+    font-family: var(--fontfamily);
+    font-size: 8rem;
+}
+.developer h4 {
+    color: var(--color3);
+}
+.developer h3 {
+    color: var(--color3);
+}
+.devs {
+    position: fixed;
+    top: 70vh;
+    height: 40vh;
+    margin-top: -1%;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+.devs-text {
+    color: var(--color1);
+    padding-top: 15rem;
+    text-align: left;
+    margin-left: 7rem;
+    font-size: 2.5rem;
+}
+.devs-text p {
+    font-size: var(--fontsize2);
+}
+.devs-text a {
+    text-decoration: none;
+    color: var(--color2);
+    font-weight: bolder;
+}
+ 
+.pix {
+    padding-top: 10rem;
+    padding-left: 10rem;
+    position: fixed;
+    left: 130rem;
+    top: 50rem;
+    
+}
+.pix img {
+    width: 20vw;
+    border-radius: 50%;
+    border-color: var(--color1);
+    border-style: solid;
+    border-width: thin;
+    padding: 3rem;
+    position: relative;
+}
+.hearts {
+    position: absolute;
+    bottom: 10rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--fontsize2);
+    gap: 1rem;
+}
+@media (orientation:portrait) {
+    .basic {
+        overflow: hidden;
+        padding-bottom: 3rem;
+    }
+    .navbar {
+        position: relative;
+    }
+    .navbarLogo h1 {
+        font-size: large;
+        padding: 0.5rem;
+        position: relative;
+    }
+    .fa-bars {
+        font-size: 1rem;
+        position: absolute;
+        top: -9.5rem;
+        color: var(--color1);
+        
+    }
+    .developer {
+        margin-top: -3vh;        
+        font-size: large;
+        margin-left: 1rem;
+        position: absolute;
+    }
+    .developer h1 {
+        font-size: large;
+        margin-left: 0.1rem;
+    }
+    .pix  {
+        padding-top: 0;
+        position: absolute;
+        left: -8rem;
+        top: 10rem;
+    }
+    .pix img {
+        width: 27vw;
+        padding: 0.5rem;
+    }
+    .devs {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .devs-text {
+        font-size: large;
+        color: var(--color1);
+        margin-top: -36vh;
+        margin-left: 4vw;
+    }
+    .devs-text p {
+        font-size: 1rem;
+        width: 80vw;
+        
+    }
+    
+    .hearts {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        bottom: 1rem;
+        
+    }
+    .hearts .fa-phone-volume, .hearts .fa-heart, .hearts .fa-pen-clip, .hearts .fa-user-tie, .fa-arrow-right {
+        font-size: large;
+        left: -1rem;
+        padding-bottom: 1rem;
+        gap: 0;
+        color: var(--color2);
+    }
+    .hearts .fa-phone-volume {
+        bottom: -1rem;
+    }
+    .hearts .fa-pen-clip {
+        bottom: 2rem;
+    }
+    .hearts .fa-user-tie {
+        bottom: 5rem;
+    }
+    .hearts .fa-heart {
+        bottom: 8rem;
+    }    
+}
+@media (500px <= width <= 850px) {
+   .devs-text p {
+    top: 12rem;
+    position: absolute;
+   }
+   .devs-text h4 {
+    top: 7rem;
+    position: absolute;
+    width: 70vw;
+   }
+   .developer h4 {
+    width: 70vw;
+    position: absolute;
+    top: 23rem;
+   } 
+   .developer h1 {
+    position: absolute;
+    top: 20rem;
+   }
+   .developer h3 {
+    position: absolute;
+    width: 30vw;
+    top: 15rem;
+   }
+   .developer {
+    margin-left: 2rem;
+   }
+   .pix img {
+    position: absolute;
+    top: 13rem;
+   }
+}
+@media (900px <= width <= 1300px) {
+    .navbarLogo h1 {
+        font-size: larger;
+        padding: 1rem;
+    }
+    .fa-bars {
+        font-size: larger;
+        top: -9.5rem;
+    }
+    .developer h3, .developer h1, .developer h4, .devs-text h4, .devs-text p,
+    .hearts .fa-phone-volume, .hearts .fa-heart, .hearts .fa-pen-clip, .hearts .fa-user-tie, .fa-arrow-right 
+     {
+        font-size: large;
+    }
+    .devs-text {
+        top: -15rem;
+        position: absolute;
+        width: 50vw;
+    }
+    .pix {
+        top: 7rem;
+        left: 30rem;
+        
+    }
+    .pix img {
+        padding: 1rem;
+    }
+    .hearts {
+        position: absolute;
+        bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        right: 2rem;
+        gap: -5rem;
+    }
+}

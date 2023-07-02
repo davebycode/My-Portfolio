@@ -1,0 +1,309 @@
+:root {
+    --fontfamily: 'Yeseva One', cursive;
+    --fontsize1: 2rem;
+    --fontsize2: 4rem;
+    --fontsize3: 6rem;
+    --fontsize4: 7rem;
+    --color1: #F8F8F9;
+    --color2: #111439;
+}
+.article {
+    height: 100vh;
+background-image: linear-gradient(
+    225deg,
+    hsl(0deg 41% 58%) 1%,
+    hsl(0deg 46% 58%) 32%,
+    hsl(0deg 52% 58%) 40%,
+    hsl(0deg 58% 58%) 45%,
+    hsl(0deg 64% 59%) 48%,
+    hsl(0deg 69% 59%) 50%,
+    hsl(0deg 75% 58%) 51%,
+    hsl(0deg 80% 58%) 51%,
+    hsl(0deg 85% 57%) 51%,
+    hsl(0deg 91% 57%) 51%,
+    hsl(0deg 96% 55%) 50%,
+    hsl(0deg 100% 50%) 50%,
+    hsl(11deg 100% 50%) 50%,
+    hsl(16deg 100% 50%) 49%,
+    hsl(19deg 100% 50%) 49%,
+    hsl(22deg 100% 50%) 49%,
+    hsl(25deg 100% 50%) 49%,
+    hsl(27deg 100% 50%) 50%,
+    hsl(29deg 100% 50%) 52%,
+    hsl(32deg 100% 50%) 55%,
+    hsl(33deg 100% 50%) 60%,
+    hsl(35deg 100% 50%) 68%,
+    hsl(37deg 100% 50%) 99%
+  );
+}
+.portfolio {
+    padding-top: 14rem;
+    font-size: var(--fontsize2);
+    font-family: var(--fontfamily);
+    text-transform: uppercase;
+    color: var(--color1);
+}
+.address {
+    position: absolute;
+    right: 2rem;
+    font-size: var(--fontsize3);
+    color: var(--color1);
+    bottom:3rem;
+}
+.navsLogo h1{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontfamily);
+    font-size: var(--fontsize3);
+    padding-left: 2rem;
+    font-weight: bolder;
+    border-color: var(--color1);
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+    border-radius: 5rem;
+    padding: 2rem;
+    margin-left: 2rem;
+    position: absolute;
+}
+.navs .fa-ellipsis {
+    margin-top: 12rem;
+    color: var(--color1);
+    font-size: 6rem;
+    position: absolute;
+    right: 3rem;
+    top: -7rem;
+}
+.portfolio-icons {
+        position: absolute;
+        bottom: 3rem;
+        right: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        font-size: var(--fontsize2);
+}
+.portfolio-projects {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 50rem;
+        width: auto;
+        padding: 2rem;
+}
+.projects {
+    background-color: var(--color1);
+    border-color: var(--color2);
+    border-style: solid;
+    border-width: thin;
+    padding: 1rem;
+}
+.main-projects {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        gap: 3rem;
+        height: 50%;
+        border-radius: 2%;
+        margin-top: 8rem;
+        width: 80%;
+        box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.57);
+        -webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.57);
+        -moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.57);
+}
+.portfolio h1 {
+    text-align: center;
+}
+.main-projects h1{
+    font-size: var(--fontsize2);
+    font-weight: bolder;
+    font-family: var(--fontfamily);
+    color: var(--color2);
+    text-align: center;
+
+}
+.main-projects button {
+    padding: 2rem;
+    font-size: var(--fontsize2);
+    color: var(--color1);
+    background-color: var(--color2);
+    transition-timing-function: ease;
+    transition-duration: 3s;
+    border: none;
+    border-radius: 3%;
+}
+.main-projects button:hover  {
+    background-color: var(--color1);
+    color: var(--color2);
+    border-color: var(--color2);
+    border-width: thin;
+    border-style: solid;
+}
+.main-projects img {
+    transition-duration: 1s;
+    filter: brightness(50%);
+    transition-timing-function: ease-in-out;
+    width: 100%;
+}
+.main-projects img:hover {
+    filter: brightness(90%);
+    transform: scale(1.1);
+}
+@media (orientation:portrait) {
+    .article {
+        height: 100vh;
+    }
+   .navs .fa-ellipsis, .navsLogo h1, .portfolio-icons, .main-projects h1, .main-projects button, 
+    .portfolio {
+        font-size: small;
+    }
+    .navsLogo h1 {
+        padding: 0.5rem;
+    }
+    .portfolio-projects {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat ( 3, 0.5fr);
+        grid-column-gap: 1px;
+        grid-row-gap: 1px;
+        /* overflow: hidden; */
+    }
+    .navs .fa-ellipsis {
+        top: 3.5%;
+        position: absolute;
+        margin: 0;
+    }
+    .portfolio h1 {
+        position: absolute;
+        top: 1rem;
+        left: 7rem;
+    }
+    .nav {
+        position: absolute;
+        top: -3%;
+    }
+    .portfolio-projects {
+        gap: 0.5rem;
+        column-gap: -5rem;
+        position: absolute;
+        top: 12rem;
+        left: 0.5rem;
+        padding: 0 0;
+        height: 0;
+    }
+    .main-projects {
+        display: flex;
+        justify-content: normal;
+        flex-wrap: wrap;
+        flex-direction:column;
+        width: 100%;
+        background-color: transparent;
+        
+    }
+    .main-projects h1, .main-projects button {
+        display: none;
+    }
+    .main-projects img {
+        width: 30vw;
+    }
+      
+    }
+    @media (700px <= width <= 850px) {
+        .portfolio h1 {
+            position: absolute;
+            left: 20rem;
+        }
+        .portfolio-projects {
+            padding-left: 5rem;
+        }
+    }
+    @media (1020px <= width <= 1250px) {
+        .article {
+            overflow: hidden;
+        }
+        .navsLogo h1, .navs .fa-ellipsis, .portfolio-icons, .portfolio h1 {
+            font-size: large;
+        }
+        .navsLogo h1 {
+            padding: 0.5rem;
+        }
+        .navs .fa-ellipsis {
+            position: absolute;
+            top: -27%;
+        }
+        .portfolio h1 {
+            position: absolute;
+            top: 5rem;
+            left: 28rem;
+            font-size: x-large;
+        }
+        .portfolio-projects {
+            gap: 0.5rem;
+            column-gap: -5rem;
+            position: absolute;
+            top: 12rem;
+            left: 0.5rem;
+            padding: 0 0;
+            height: 0;
+        }
+        .main-projects {
+            width: 60vw;
+            background-color: transparent;
+        }
+        .projects {
+            width: 50%;
+            padding: 0;
+        }
+        .main-projects h1, .main-projects button {
+            display: none;
+        }
+        .main-projects img {
+            width: 20vw;
+        }
+        
+    }
+    @media (1260px <= width <= 1300px) {
+        .article {
+            overflow: hidden;
+        }
+        .navsLogo h1, .navs .fa-ellipsis, .portfolio-icons, .portfolio h1 {
+            font-size: x-large;
+        }
+        .navsLogo h1 {
+            padding: 0.5rem;
+        }
+        .navs .fa-ellipsis {
+            position: absolute;
+            top: -19%;
+        }
+        .portfolio h1 {
+            position: absolute;
+            top: 5rem;
+            left: 32rem;
+            font-size: x-large;
+        }
+        .portfolio-projects {
+            gap: 0.5rem;
+            column-gap: -5rem;
+            position: absolute;
+            top: 12rem;
+            left: 2rem;
+            padding: 0 0;
+            height: 0;
+        }
+        .main-projects {
+            width: 60vw;
+            background-color: transparent;
+        }
+        .projects {
+            width: 50%;
+            padding: 0;
+        }
+        .main-projects h1, .main-projects button {
+            display: none;
+        }
+        .main-projects img {
+            width: 20vw;
+        }
+        
+    }

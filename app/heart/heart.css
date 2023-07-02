@@ -1,0 +1,329 @@
+:root {
+    --fontfamily: 'Yeseva One', cursive;
+    --fontsize1: 1rem;
+    --fontsize2: 3rem;
+    --fontsize3: 4rem;
+    --fontsize4: 4rem;
+    --color1: #F8F8F9;
+    --color2: #111439;
+}
+.likes {
+    height: 100vh;
+    padding: 2rem;
+    overflow: hidden;
+    background-image: linear-gradient(
+  90deg,
+  hsl(0deg 41% 58%) 1%,
+  hsl(0deg 46% 57%) 32%,
+  hsl(0deg 52% 56%) 40%,
+  hsl(0deg 57% 55%) 45%,
+  hsl(0deg 63% 55%) 48%,
+  hsl(0deg 68% 54%) 50%,
+  hsl(0deg 73% 54%) 51%,
+  hsl(0deg 78% 53%) 51%,
+  hsl(0deg 84% 52%) 51%,
+  hsl(0deg 90% 51%) 51%,
+  hsl(0deg 94% 51%) 50%,
+  hsl(0deg 100% 50%) 50%,
+  hsl(3deg 100% 50%) 50%,
+  hsl(7deg 100% 50%) 49%,
+  hsl(10deg 100% 50%) 49%,
+  hsl(13deg 100% 50%) 49%,
+  hsl(17deg 100% 50%) 49%,
+  hsl(20deg 100% 50%) 50%,
+  hsl(24deg 100% 50%) 52%,
+  hsl(27deg 100% 50%) 55%,
+  hsl(30deg 100% 50%) 60%,
+  hsl(34deg 100% 50%) 68%,
+  hsl(37deg 100% 50%) 99%
+);
+
+}
+.navbars {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-between;
+}
+.navbarsLogos h1{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fontfamily);
+    font-size: var(--fontsize3);
+    padding-left: 2rem;
+    font-weight: bolder;
+    border-color: var(--color1);
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+    border-radius: 5rem;
+    padding: 2rem;
+    position: absolute;
+}
+.logo .fa-bars-staggered {
+    margin-top: 12rem;
+    color: var(--color1);
+    font-size: 6rem;
+    position: absolute;
+    right: 3rem;
+    top: -6rem;
+}
+.likes h1 {
+    font-family: var(--fontfamily);
+    font-size: var(--fontsize3);
+    color: var(--color1);
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.likes-texts {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 2rem;
+    gap: 3rem;
+    margin-top: 7rem;
+    justify-content: space-evenly;
+}
+.likes-one {
+    background-color: var(--color1);
+    height: 50vh;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    color: var(--color2);
+    width: 30vw;
+    overflow: hidden;
+}
+.likes-one h3, .likes-one h4 {
+    font-size: var(--fontsize2);
+    width: 25vw;
+    padding: 2rem;
+    text-align: left;
+    margin-left: 4rem;
+}
+.likes-one h3 {
+    font-size: var(--fontsize3);
+    color: var(--color3);
+    font-family: var(--fontfamily);
+}
+.likes-one h4 {
+    display: block;
+    font-size: var(--fontsize2);
+    margin-top: -5%;
+    font-size: 3.5rem;
+
+}
+.likes-two {
+    border-radius: 23% 77% 53% 47% / 44% 38% 62% 56% ;
+    background-color: var(--color1);
+    height: 50vh;
+    color: var(--color2);
+    width: 30vw;
+    margin-top: 30rem;
+    overflow: hidden;
+}
+.likes-two h3, .likes-two h4 {
+    font-size: var(--fontsize2);
+    width: 25vw;
+    padding: 2rem;
+    text-align: left;
+    margin-left: 4rem;
+}
+.likes-two h3 {
+    font-size: var(--fontsize3);
+    color: var(--color3);
+    font-family: var(--fontfamily);
+}
+.likes-two h4 {
+    display: block;
+    font-size: var(--fontsize2);
+    margin-top: -5%;
+    font-size: 3.5rem;
+
+}
+.next {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    right: 3rem;
+    bottom: 4rem;
+    position: absolute;
+    font-size: var(--fontsize2);
+}
+.next .fa-phone-volume, .next .fa-house-chimney, .next .fa-pen-clip, .next .fa-user-tie  {
+    color: var(--color2);   
+}
+@media (orientation:portrait) {
+    .likes {
+        overflow: hidden;
+        padding-bottom: 20rem;
+        height: 100vh;
+    }
+    .navbars {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-left: -2rem;
+        margin-top: -8.5rem;
+
+    }
+   .navbarsLogos h1 {
+    font-size: large;
+    padding: 1rem;
+    
+   } 
+   .likes h1 {
+    font-size: large;
+   }
+   .logo .fa-bars-staggered {
+    font-size: large;
+    top: -10rem;
+    /* left: 0; */
+    color: var(--color1);
+   }
+
+   .likes h1 {
+    margin-top: 5rem;
+   }
+   .likes-texts {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 9rem;
+    margin-left: -2%;
+   }
+   .likes-one, .likes-two {
+    border-radius: none;
+    height: 34vh;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    width: 70vw;
+    border: none;
+    overflow: hidden;
+    padding: 1rem;
+    margin-left: -3%;
+   }
+   .likes-two {
+    height: auto;
+   }
+   .likes-one h4, .likes-two h4 {
+    margin-top: -15%;
+    width: 50vw;
+   }
+   .likes-one h3, .likes-one h4, .likes-two h3, .likes-two h4 {
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: -1rem;
+
+   }
+   .likes-two {
+    margin-top: -2rem;
+   }
+   .next .fa-phone-volume, .next .fa-house-chimney, .next .fa-pen-clip, .next .fa-user-tie  {
+    font-size: large;  
+}
+.next {
+    display: flex;
+    flex-direction: row;
+    bottom: -20rem;
+    left: 17%;
+    position: absolute;
+}
+
+}
+@media (500px <= width <= 850px) {
+    .likes {
+        padding-bottom: 1rem;
+    }
+    .likes-texts {
+        margin-left: 5%;
+    }
+    .likes-one, .likes-two {
+        font-size: xx-large;
+
+    }
+    .likes-one h4, .likes-two h4 {
+        margin-top: 0;
+        height: auto;
+    }
+    .next {
+     bottom: -2%;
+     left: 30%;
+     font-size: var(--fontsize3);
+    } 
+}
+@media (900px <= width  <= 1300px) {
+    .likes {
+        overflow: hidden;
+        height: 100vh;
+    }
+    .navbars {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-left: -2rem;
+        margin-top: -8.5rem;
+    }
+   .navbarsLogos h1 {
+    font-size: large;
+    padding: 1rem;
+    
+   } 
+   .likes h1 {
+    font-size: large;
+   }
+   .logo .fa-bars-staggered {
+    font-size: 2rem;
+    top: -10rem;
+    position: absolute;
+    color: var(--color1);
+   }
+
+   .likes h1 {
+    margin-top: 5rem;
+   }
+   .likes-texts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 11rem;
+    margin-left: -2%;
+   }
+   .likes-one, .likes-two {
+    border-radius: none;
+    height: 40vh;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    width: 30vw;
+    border: none;
+    overflow: hidden;
+    padding: 1rem;
+    margin-left: -3%;
+   }
+   .likes-two {
+    height: auto;
+   }
+   .likes-one h4, .likes-two h4 {
+    margin-top: -15%;
+    /* width: 50vw; */
+   }
+   .likes-one h3, .likes-one h4, .likes-two h3, .likes-two h4 {
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: -1rem;
+
+   }
+   .likes-two {
+    margin-top: -2rem;
+   }
+   .next .fa-phone-volume, .next .fa-house-chimney, .next .fa-pen-clip, .next .fa-user-tie  {
+    font-size: large;  
+}
+.next {
+    display: flex;
+    flex-direction: row;
+    bottom: -5%;
+    right: 2%;
+    gap: 2rem;
+    position: absolute;
+    
+}
+
+
+}
