@@ -82,7 +82,7 @@
     color: white;
     padding: 2rem;
     gap: 3rem;
-    margin-top: 7rem;
+    margin-top: 4rem;
     justify-content: space-evenly;
 }
 .likes-one {
@@ -148,6 +148,9 @@
     bottom: 4rem;
     position: absolute;
     font-size: var(--fontsize2);
+}
+.fa-arrow-right {
+    font-size: 2rem;
 }
 .next .fa-phone-volume, .next .fa-house-chimney, .next .fa-pen-clip, .next .fa-user-tie  {
     color: var(--color2);   

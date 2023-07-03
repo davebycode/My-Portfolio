@@ -40,10 +40,10 @@ const Portfolios = () => {
                   <Link href='https://6460929cef063b5b719ff1b8--whimsical-dango-27b8b4.netlify.app/'><button>Template Review</button></Link>
                   </div>
                   <div className='projects'>
-                  <Link href='https://github.com/davebycode/Flight-App.git'><img src='/pix/Flight.png' alt=''/></Link>
+                    <Link href='https://649dad46449f8000cb7b82cd--gorgeous-lily-c5f05d.netlify.app/'><img src='/pix/Flight.png' alt=''/></Link>
                  <h1>Flight App</h1>
                 <br/>
-                <Link href='https://github.com/davebycode/Flight-App.git'><button>Template Review</button></Link>
+                <Link href='https://649dad46449f8000cb7b82cd--gorgeous-lily-c5f05d.netlify.app/'><button>Template Review</button></Link>
                 </div>
                 <div className='projects'>
                   <Link href='https://app.netlify.com/sites/astounding-crumble-7c758b/overview'><img src='/pix/Netflix.png' alt=''/></Link>
@@ -53,7 +53,7 @@ const Portfolios = () => {
                 </div>
                 <div className='projects'>
                   <Link href='https://github.com/davebycode/e-commerce-app-web'><img src='/pix/e-commerce.png' alt=''/></Link>
-                  <h1>Netflix App</h1>
+                  <h1>E-commerce App</h1>
                 <br/>
                 <Link href='https://github.com/davebycode/e-commerce-app-web'><button>Template Review</button></Link>
                 </div>
