@@ -286,7 +286,7 @@
    .likes-texts {
     display: flex;
     flex-direction: row;
-    margin-top: 11rem;
+    margin-top: 6rem;
     margin-left: -2%;
    }
    .likes-one, .likes-two {
@@ -315,7 +315,7 @@
    .likes-two {
     margin-top: -2rem;
    }
-   .next .fa-phone-volume, .next .fa-house-chimney, .next .fa-pen-clip, .next .fa-user-tie  {
+   .next .fa-phone-volume, .next .fa-house-chimney, .next .fa-pen-clip, .next .fa-user-tie, .fa-arrow-right  {
     font-size: large;  
 }
 .next {
