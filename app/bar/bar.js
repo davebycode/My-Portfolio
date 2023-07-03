@@ -11,7 +11,7 @@ const Bar = () => {
     className='bars'>
       <div className='main-bars'>
       <div className='bars-display'>
-      <Link href='https://pdf.ac/m2KEh'><h5>RESUME</h5></Link>
+      <Link href='https://acrobat.adobe.com/id/urn:aaid:sc:EU:1141c65b-d872-4823-b15d-67501db0bff1'><h5>RESUME</h5></Link>
       <Link href='https://1drv.ms/i/s!AvuNHTAu2GOrdk8T4aLSf_gSRGI?e=gFp7EB'><h5>CERTIFICATE</h5></Link>
       <div className='media'>
       <Link href='https://github.com/davebycode'><h3>GH</h3></Link>
